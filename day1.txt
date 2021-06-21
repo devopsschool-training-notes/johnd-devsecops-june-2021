@@ -309,6 +309,86 @@ Access from outside?
    44  clear
 
 
+=========================================
+What is SonarQube?
+-----------------------------------------------
+	Quality mgt tool
+	Dev in Java
+	Release
+		Community	- FOCUS
+		Developer
+		Enterprise
+		Data center
+	From Sonatype
+	-------------------------------
+
+	Quality 
+	-----------------
+	- Code Quality [ FOCUS ] 
+	- Test Quality
+
+	Code Quality Param
+	- Reliaable
+	- Maintain
+	- Security
+	- Duplicate
+	- ------
+
+PLAN -> Code -> Analyze -> Build -> UT -> Package > Archive -> Deploy2Q -> AT -> CC
+====================================================================================
+JIRA 	Git     SonarQube  Maven   Junit   war 	     Artifactory Ansible  selenium jacoco
+
+
+Why we need SonarQube?
+---------------------------
+
+
+How it works?
+==================================
+Server
+------------
+http://20.81.129.174:9000/
+admin
+password
+
+	dashboard
+		
+	rules
+		CANCOME FROM FREE OS + Tools SCA
+	DB
+		POST
+		MSSQl
+		ORACLE
+		maria
+
+
+
+----Dev desk-----------
+Scanner
+Download from here - https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/
+	DONE
+
+- Change "sonar.host.url" in sonar-scanner.properties
+
+
+Code
+===============================================================================
+https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
+- CHANGE "sonar.projectKey" in sonar-project.properties
+- CHANGE "sonar.projectName" in sonar-project.properties
+- CHANGE "sonar.password" in sonar-project.properties
+
+
+============================================================================
+FINAL - RUN SCANNER ON SOURCE CODE
+
+C:\tools\sonarqube\scanner\sonar-scanner-cli-4.6.2.2472-windows\bin\sonar-scanner.bat
+
+
+
+
+
+
 
 
 
