@@ -1,0 +1,312 @@
+Agenda
+-----------------------
+Docker		HALF
+SonarQube	HALF
+
+Jenkins		ONE
+
+Selenium	HALF
+Jmeter		HALF
+
+Jacoco		HALF
+DevSecOps 	- THEoRY	HALF
+===========================================================
+Demo + Lab === Cloud
+
+Start Time - 9:30 AM - 6:00 PM
+	QA - 5:30 - 6:00 PM
+Lunch Time - 1:00 - 2:00 PM
+BREAK -
+	FIRST - 11: AM
+	LAST - 3:30 PM
+----------------------------------
+==============================================================================================
+What is Docker?
+-----------	------------------------
+	A PLATFORM	
+	A TOOL
+
+	Container mgmt tool.
+	Company Name
+	-- Docker Engine
+	Release
+		- Comm
+		- Enter
+	Written in Golang
+	By Soloman Hyke
+	2014 - 2015
+	------------------------------------------
+	Code you can download from Github
+
+
+Tool
+- Save time		= FOR RUNN APPS in DEV-QA-PROD
+- Save Cost		= Reducing a wastage of CPU + RAM + STOR in Compute
+- Imp* QUALITY & EFF*	= 
+------------------------------------------
+What is Container?
+-----------------------------------------
+YOU ARE a Container
+Is a FULLY INDEPENDENT ISOLATED APP RUN TIME ENV/Resources
+
+
+KERNAL
+			OS WOULD CREATE		OS CAN CREATE		APP NEED
+	Namespace
+	- USER NS	MULTIPLE		MULTIPLE		1	
+	- PID NS	1			MULTIPLE		1		
+	- MNT(RFS) NS	1			MULTIPLE		1	
+	- NET NS	1			MULTIPLE		1	
+	Cgroup
+		- Allocate CPU+RAM to PID
+	Capabilites
+		- Decide a USER with root or not root access
+
+==========================================================
+20.81.129.174
+vmuser
+VM$user3456789
+========================================
+Docker components?
+================================
+Docker Engine
+=========================
+Human --> Docker client --> Docker Server(DockerD) ---> ContainerD --> kernal
+       -------------------------------------------
+			Docker Engine
+
+Docker Image
+--------------------------
+ROOT FILESYSTEM + USER FS + APP FS
+-------------------------------------------------
+centos		centos	 apache
+ub		  root		tomcat
+
+FROM ONE IMAGE --- N containers.
+
+
+VM Image
+----------
+BOOT FS + ROOT FILESYSTEM + USER FS + APP FS
+-------------------------------------------------
+(Kernal) + centos		centos	 apache
+	   ub		  root		tomcat
+
+
+Docker Registry
+		Repository
+			Version of file system
+		
+		public
+			hub.docker.com
+		pvt
+			articatory
+			nexus
+
+
+Docker Container
+
+Human --> Docker client --> Docker Server(DockerD) l
+       -------------------------------------------
+			CHECK IMAHGE in LOCAL regis
+			FOUND - --------- ---> ContainerD --> kernal
+			NOT FOUND
+			- DOWNLOAD image ------> ContainerD --> kernal
+
+								CREATE ONE ROOTFS from Image
+								CREATE ONE NET
+								CREATE ONE PID
+								CREATE ONE USER
+								USER IS ATTACHED TO NET-PID-ROOTFS
+
+
+
+===============================How can we get started with Docker?
+===================================================
+Step 1- Install Docker
+https://devopsschool.com/tutorial/docker/install-config/docker-install-commuityedition-centos-rhel.html
+
+   2  ls
+    3  sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+    4  sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    5  sudo yum install –y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    6  sudo yum-config-manager --enable rhui-REGION-rhel-server-extras
+    7  sudo yum install -y docker-ce
+    8  sudo yum install -y docker-ce
+    9  sudo systemctl enable docker
+   10  sudo systemctl start docker
+   11  clear
+   12  docker
+   13  clear
+   14  docker -v
+   15  docker -h
+   16  clear
+   17  docker info
+   18  clear
+   19  ls
+
+ 22  which docker
+   23  docker dockerd
+   24  which dockerd
+   25  which containerd
+   26  ps -eaf | grep docker
+   27  ps -eaf | grep cont
+   28  history
+
+
+
+Step 2 - Validate Docker install?
+
+Step 3 - Working with Container lifecycle
+==============================================
+Lifecycle of VMs
+---------------------------------------------
+create -> Start -> stop -> start -> restart -. pause -> unpause -> kill -> remove
+------------------------------------------------------------------------------------
+
+
+Lifecycle of Container
+---------------------------------------------
+create -> Start -> stop -> start -> restart -. pause -> unpause -> kill -> remove
+------------------------------------------------------------------------------------
+
+  30  docker ps
+   31  docker help ps
+   32  clear
+   33  docker ps
+   34  docker ps -a
+   35  docker images
+   36  docker pull httpd
+   37  clear
+   38  docker images
+   39  docker create --name raj1 httpd
+   40  docker ps
+   41  docker ps -a
+   42  docker start 56d0235c6f5e
+   43  docker ps -a
+   44  docker stop 56d0235c6f5e
+   45  docker ps -a
+   46  clear
+   47  docker start 56d0235c6f5e
+   48  clear
+   49  docker ps -a
+   50  docker ps -a
+   51  docker restart 56d0235c6f5e
+   52  docker ps -a
+   53  docker pause 56d0235c6f5e
+   54  docker ps -a
+   55  docker unpause 56d0235c6f5e
+   56  docker ps -a
+   57  docker kill 56d0235c6f5e
+   58  docker ps -a
+   59  clear
+   60  docker rm 56d0235c6f5e
+   61  docker ps -a
+   62  history
+
+
+ 62  history
+   63  clear
+   64  docker create httpd
+   65  docker create httpd
+   66  docker create httpd
+   67  docker create httpd
+   68  docker create httpd
+   69  docker create httpd
+   70  docker create httpd
+   71  docker create httpd
+   72  clear
+   73  docker ps -a
+   74  docker start 3f298b9f92cb f286abe877ca 912cbd68d92b 06091be7e30e d8259825a829 43f457a4261a a6cc5b1dfa80 564a061a6ac9
+   75  docker ps -a
+   76  clear
+   77  docker ps -a
+   78  docker exec 3f298b9f92cb df -kh
+   79  docker exec f286abe877ca df -kh
+   80  df -kh
+   81  clear
+   82  ls
+   83  cd /var/lib/docker/overlay2/948857c87e1a45f52e6dfa920c3a230ba7386a6b93b02687f2470fc482123fb1/merged
+   84  ls
+   85  cd -
+   86  clear
+   87  df -kh
+   88  clear
+   89  docker ps
+   90  df -kh
+   91  clear
+   92  docker ps
+   93  docker inspect 3f298b9f92cb
+   94  clear
+   95  docker ps
+   96  docker inspect f286abe877ca
+   97  docker ps
+   98  clear
+   99  docker ps
+  100  docker exec 3f298b9f92cb ps -eaf
+  101  docker run -d jenkins
+  102  docker run -d jenkins/jenkins
+  103  clear
+  104  docker run -d jenkins/jenkins
+  105  docker ps
+  106  docker exec 8685fda9fd80 ps -eaf
+  107  docker exec b18b885cbc4e ps -eaf
+  108  clear
+  109  history
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
