@@ -261,14 +261,52 @@ What is diff between
 		PAUSE Vs UNPAUSE
 
 
+========================================================
+Dev
 
 
 
+QA
 
 
 
+PROD
 
 
+Tool
+- Save time		= FOR RUNN APPS in DEV-QA-PROD
+- Save Cost		= Reducing a wastage of CPU + RAM + STOR in Compute
+- Imp* QUALITY & EFF*	= 
+=========================================================
+RUN 
+=============================
+pull + create + start + Attach to container main process or become a container
+
+RUN -d
+=============================
+pull + create + start + DeAttach to container main process or DO NOT become a container
+
+How to use containers?
+==============================
+Go inside - 
+
+   29  docker exec -it b53a8468d4f5 /bin/bash
+   30  docker exec -it b53a8468d4f5 /bin/bash
+
+
+Access from outside?
+
+   34  docker ps
+   35  docker inspect b53a8468d4f5
+   36  clear
+   37  ping 172.17.0.7
+   38  curl http://172.17.0.7
+   39  clear
+   40  docker run -d -p 80:80 httpd
+   41  docker run -d -p 81:80 httpd
+   42  docker run -d -p 82:80 httpd
+   43  docker ps
+   44  clear
 
 
 
