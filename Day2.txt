@@ -23,7 +23,7 @@ Auto Build + Auto Testing
 
 PLAN -> Code -> Analyze -> Build -> UT -> Pack -> Archive -> Dep2Qa -> AT -> CC 
 -------------------------------------------------------------------------------
-JIRA -> Git  -> SonarQube -> Maven -> Junit -> WAr-> Artifactory -> Ansible -> Selenium > Jacoco	--------------------------------------------------------------------------------------------------						Jenkins							
+JIRA -> Git  -> SonarQube -> Maven -> Junit -> WAr-> Artifactory -> Ansible -> Selenium > Jacoco	--------------------------------------------------------------------------------------------------											Jenkins							
 
 
 							IF ALL PASSED -----> Release
@@ -100,16 +100,30 @@ http://20.81.129.174:8080/
 rajesh
 password
 
+============================================================================================
+
+How to Intgrate ANY tools with Jenkins
+===============================================
+Step 1- Are you having tools up n running?
+
+http://20.81.129.174:9000/
+admin
+password
+
+
+Step 2 - Did you install sonarqube plugins?
 
 
 
+Step 3 - Configure a Sonarqube server  with Jenkins Config
 
 
+Step 4 - install Scanner at Build Agent
 
 
+Step 5 - USE IT IN JOB FOR SCANN
 
-
-
+https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
 
 
 
