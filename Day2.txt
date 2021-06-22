@@ -125,6 +125,25 @@ Step 5 - USE IT IN JOB FOR SCANN
 
 https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
 
+=============================================================================================
+
+https://www.devopsschool.com/blog/how-to-schedule-and-trigger-a-jenkins-job-automatically/
+
+Method 1 – AT CERTAIN TIME AKA Build periodically
+
+Method 2 – AT CERTAIN TIME BUT Build only when there is Code changes AKA Poll SCM
+
+Method 3 – Trigger using command line or script AKA Trigger builds remotely (e.g., from scripts)
+
+Method 4 – Trigger this job when other job is triggerred AKA Build after other projects are built
+
+Method 5 – Trigger a job when you there is PUSH into Github AKA GitHub hook trigger for GITScm polling
+
+Method 6 – Trigger a job when you there is PUSH into Bitbucket AKA GitHub hook trigger for GITScm polling
+
+Method 7 – Trigger another job after this Job AKA Post Build Action => Build Other project
+
+Method 8 – Trigger a Jenkins jobs using Jenkins command line jar file
 
 
 
@@ -132,20 +151,14 @@ https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
 
 
 
+curl -X POST --user rajesh:11ddfc890a61407d532c61d5fecfb4f87f http://20.81.129.174:8080/job/Rajesh/job/build/build?delay=0sec
+curl -X POST --user rajesh:password http://20.81.129.174:8080/job/Rajesh/job/build/build?delay=0sec
+
+ JENKINS_URL/job/Rajesh/job/build/build?token=TOKEN_NAME or /buildWithParameters?token=TOKEN_NAME
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+https://www.devopsschool.com/blog/how-to-schedule-and-trigger-a-jenkins-job-automatically/
 
 
 
