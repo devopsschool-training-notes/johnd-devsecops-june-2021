@@ -1,0 +1,38 @@
+Working
+===================
+javac -cp C:\tools\selenium\clients\selenium-java-3.141.59\libs\* example1.java
+java -cp "C:\tools\selenium\clients\selenium-java-3.141.59\libs\*;" example1
+
+===NOT WORKING================
+java -cp C:\Users\Yaroslav\IdeaProjects\GoogleSearchTest\src\main\java\;C:\Users\Yaroslav\IdeaProjects\GoogleSearchTest\lib\* org.testng.TestNG testng.xml
+
+java example1 -cp C:\tools\selenium\clients\selenium-java-3.141.59\libs\*
+ 
+Refr
+https://stackoverflow.com/questions/53239203/package-not-found-when-running-javac
+
+
+java -cp C:\tools\selenium\clients\selenium-java-3.141.59\libs\* example1
+
+========================================
+What is Jacoco
+-----------------------------------
+	Code Coverage Tool.
+
+What is Code Coverage?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

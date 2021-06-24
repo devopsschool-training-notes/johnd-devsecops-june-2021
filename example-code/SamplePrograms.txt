@@ -1,0 +1,6 @@
+https://github.com/Ardesco/Selenium-Maven-Template
+https://github.com/LambdaTest/junit-selenium-sample
+https://github.com/LambdaTest/junit-selenium-sample
+
+HUB
+https://www.toolsqa.com/selenium-webdriver/selenium-grid-how-to-easily-setup-a-hub-and-node/

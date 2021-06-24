@@ -1,0 +1,11 @@
+Code Coverage | Test Coverage
+==========================================
+Code Coverage
+	is a techq* to find out how much % of the code has been tested as part of Auto+man testing?
+
+
+Test Coverage
+	is a techq* to find out how much % of the tests has been used as part of Auto testing?
+	
+===============================
+How this works?
