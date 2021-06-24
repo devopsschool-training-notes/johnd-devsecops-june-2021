@@ -1,0 +1,47 @@
+- Imm Feedback
+==================================
+- Email
+	SMTP
+		- Mail Ext	- Basic
+		- Ext Email ext - Advance
+- Chat
+	Team
+	Slack
+	Skype
+1. install plugins
+2. Configure a plugins
+3. Use that plugins
+
+- Dashboard - PIPELINE
+	- Manually Pipeline
+	- Code for Integration
+========================
+
+
+Step 1 - JDK8+ MUST BE INSTALLED & JAVA_HOME
+Step 2 - Download Jmeter [
+Step 3 - RUN
+
+
+
+http://20.81.129.174/
+
+
+https://www.devopsschool.com/trainers/
+https://www.devopsschool.com/trainers/rajesh-kumar
+"Total, Over 15 years of extensive experience"
+
+
+
+====================================
+SonarQube -> Select
+
+
+
+
+
+
+
+
+
+
