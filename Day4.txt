@@ -1,0 +1,16 @@
+javac -cp "C:\tools\selenium\clients\selenium-java-3.141.59\libs\*" example1.java
+java -cp "C:\tools\selenium\clients\selenium-java-3.141.59\libs\*;" example1
+
+===================
+Step 1- Make sure JAVA is installed & JAVA_HOME . JDK 1.8
+
+Step 2 - Download Selenium client in C:\tools\selenium\clients
+
+Step 3 - Get a Code Exported From IDE. OR Download this code from Github
+
+Step 4 - Download Firefox Webdribver and keep it C:\tools\selenium\web-drivers
+https://github.com/mozilla/geckodriver/releases
+
+Step 5 - COmpile
+
+Step 6 - RUn it 
