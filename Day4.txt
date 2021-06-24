@@ -14,3 +14,64 @@ https://github.com/mozilla/geckodriver/releases
 Step 5 - COmpile
 
 Step 6 - RUn it 
+=====================================================================
+How to work with Grid?
+
+==================================
+Code 	-----> GRID|SERVER|HUB ------>	Node (Webdriver--> Browsers)
+
+YES		YES				YES
+=====================================================================
+What is Jacoco?
+---------------------------------
+	a tool
+	a jar file
+	Code Coverage Tool
+		as Test Coverage Tool
+
+
+What is Code Coverge?
+	- How much code has been TESTed using testing script?
+
+Test Coverage
+	- How much test cases has been used to test a code?
+
+
+Why we need CC and TC?
+-------------------------------
+
+
+How it works?
+-------------------------------------
+
+
+Other tools - 
+Jacoco - cobertura
+-------------------
+Ncover
+PythonCover
+
+
+
+How to setup jacoco using Maven?
+-=================================
+1. Install JDK 8 and Set JAVA_HOME
+2. Download Maven and Add Maven_HOme/bin to PATH env
+3. git clone https://github.com/devopsschool-demo-labs-projects/jacoco-maven-unittestv2.git
+4. mvn test [ A place where u have pom.xml]
+
+============== 15mins --------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
